@@ -59,10 +59,12 @@ body {
         left: 30%;
     }
 
-
-
     .top-image:hover{
         opacity: 0;
+    }
+
+    a {
+        text-decoration: none;
     }
 
 
