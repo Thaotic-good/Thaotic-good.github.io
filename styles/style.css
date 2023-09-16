@@ -67,6 +67,17 @@ body {
         text-decoration: none;
     }
 
+    .outer-box{
+        border: 5px, black; 
+        width: 50px;
+    }
+
+    .inner-box{
+        background-color: blueviolet;
+        width: calc(3% - 50px);
+        color: white
+    }
+
 
 
 
