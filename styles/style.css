@@ -73,7 +73,7 @@ body {
       
     #div1 {
         display: block;
-        margin: auto;
+        margin: 0 auto;
         height: 30px;
         width: var(--loading-bar-width);
         border: 5px solid black;
