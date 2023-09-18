@@ -79,13 +79,16 @@ body {
         border: 5px solid black;
         background-color: white;
         padding: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     
         #div2 {
             width: calc(3% - var(--loading-bar-width));
             background-color: red;
             padding: 20px;
-            position: retative;
+            position: relative;
             top: 0px;
             left: 0px;
             z-index: 1;
