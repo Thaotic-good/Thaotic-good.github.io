@@ -82,29 +82,25 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        
+    #div1 #div2 {
+        width: calc(3% - var(--loading-bar-width));
+        background-color: red;
+        padding: 20px;
+        position: static;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
     }
-    
-        #div2 {
-            width: calc(3% - var(--loading-bar-width));
-            background-color: red;
-            padding: 20px;
-            position: relative;
-            top: 0px;
-            left: 0px;
-            z-index: 1;
-        }
-    
-        #div1 p {
-            background-color: transparent;
-            position: relative;
-            top: -10px;
-            left: 10px;
-            z-index: 2;
-            color: black;
-            font-weight: bold;
-            font-size: 20px;
-        }
 
-
-
+    #div1 p {
+        background-color: transparent;
+        position: static;
+        top: -10px;
+        left: 10px;
+        z-index: 2;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
 
