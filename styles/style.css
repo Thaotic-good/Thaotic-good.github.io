@@ -81,26 +81,26 @@ body {
         padding: 5px;
     }
     
-    #div2 {
-        width: calc(3% - var(--loading-bar-width));
-        background-color: red;
-        padding: 20px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-    }
+        #div2 {
+            width: calc(3% - var(--loading-bar-width));
+            background-color: red;
+            padding: 20px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
     
-    #div1 p {
-        background-color: transparent;
-        position: absolute;
-        top: -10px;
-        left: 10px;
-        z-index: 2;
-        color: black;
-        font-weight: bold;
-        font-size: 20px;
-    }
+        #div1 p {
+            background-color: transparent;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            z-index: 2;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
 
 
 
