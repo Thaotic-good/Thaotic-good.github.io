@@ -72,8 +72,7 @@ body {
     }
       
     #div1 {
-        display: block;
-        position: relative;
+        position: static;
         margin: 0 auto;
         height: 30px;
         width: var(--loading-bar-width);
