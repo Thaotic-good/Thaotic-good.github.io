@@ -10,8 +10,7 @@ body {
     width: 900px;
     margin: 20px auto 20px auto;
     background-color: white;
-    padding: 0 50px 50px 50px;
-    /*border: 1px solid black;*/
+    padding: 20px 50px 50px 50px;
     border: 10px outset black;
 }
 
@@ -68,39 +67,37 @@ body {
     }
 
     :root {
-        --loading-bar-width: 500px;
+        --loading-bar-width: 100%;
     }
-      
+
     #div1 {
         position: static;
-        margin: 0 auto;
         height: 30px;
         width: var(--loading-bar-width);
-        border: 5px solid black;
+        border: 3px outset black;
         background-color: white;
-        padding: 5px;
+        margin: 10px;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: space-between;
       }
       
       #div2 {
         width: calc(3% - var(--loading-bar-width));
-        background-color: red;
-        padding: 1em;
-        position: absolute;
-        top: 4px;
-        left: 4px;
+        background: linear-gradient(60deg, blue, pink);
+        padding: 15px;
+        /*justify-content: flex-start;*/
         z-index: 1;
+
       }
       
       #div1 p {
-        background-color: transparent;
-        position: absolute;
-        top: -10px;
-        left: 10px;
+        /*justify-content: flex-end;*/
         z-index: 2;
         color: black;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 25px;
+        background: linear-gradient(60deg,blue, darkviolet);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         }
