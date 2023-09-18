@@ -67,15 +67,15 @@ body {
         text-decoration: none;
     }
 
-    :root{
+    :root {
         --loading-bar-width: 500px;
-      }
+    }
       
     #div1 {
-        position: absolute;
-        left: 50px;
+        position: relative;
+        margin: auto;
         height: 30px;
-        width: 500px;
+        width: var(--loading-bar-width);
         border: 5px solid black;
         background-color: white;
         padding: 5px;
