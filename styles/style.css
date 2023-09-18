@@ -87,7 +87,7 @@ body {
         width: calc(3% - var(--loading-bar-width));
         background-color: red;
         padding: 20px;
-        position: static;
+        position: absolute;
         top: 0px;
         left: 0px;
         z-index: 1;
@@ -95,9 +95,9 @@ body {
 
     #div1 p {
         background-color: transparent;
-        position: static;
-        top: -10px;
-        left: 10px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
         z-index: 2;
         color: black;
         font-weight: bold;
