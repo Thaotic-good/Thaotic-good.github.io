@@ -85,7 +85,7 @@ body {
             width: calc(3% - var(--loading-bar-width));
             background-color: red;
             padding: 20px;
-            position: absolute;
+            position: retative;
             top: 0px;
             left: 0px;
             z-index: 1;
@@ -93,7 +93,7 @@ body {
     
         #div1 p {
             background-color: transparent;
-            position: absolute;
+            position: relative;
             top: -10px;
             left: 10px;
             z-index: 2;
