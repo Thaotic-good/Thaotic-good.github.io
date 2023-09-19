@@ -66,6 +66,34 @@ body {
         text-decoration: none;
     }
 
+    .programming-skills li {
+        list-style: "👍 ";
+    }
+
+    .programming-skills .github {
+        list-style: "🤟 ";
+    }
+
+    .about-me li {
+        list-style: "🤝 ";
+    }
+
+    .contact-info .mail {
+        list-style: "🪱" ;
+    }
+
+    .contact-info .phone {
+        list-style: "🪲";
+    }
+
+    .contact-info .instagram {
+        list-style: "🪰";
+    }
+
+    .contact-info .facebook {
+        list-style: "🪳";
+    }
+
     :root {
         --loading-bar-width: 100%;
     }
