@@ -66,6 +66,22 @@ body {
         text-decoration: none;
     }
 
+    .programming-skills li ::before {
+        list-style: none;
+        content: "👍";
+    }
+
+    .about-me li ::before {
+        list-style: none;
+        content: "🤝";
+    }
+
+    .contact-info li ::before {
+        list-style: none;
+    }
+
+
+
     :root {
         --loading-bar-width: 100%;
     }
