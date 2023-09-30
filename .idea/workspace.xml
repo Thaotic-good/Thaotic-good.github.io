@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="finished loading bar at the bottom with display: flex">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="Adding google doc cheatsheet to the personal page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,9 +70,17 @@
       <updated>1695140056923</updated>
       <workItem from="1695140059043" duration="2071000" />
       <workItem from="1695635525552" duration="4285000" />
-      <workItem from="1696092287538" duration="1017000" />
+      <workItem from="1696092287538" duration="1316000" />
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding google doc cheatsheet to the personal page">
+      <option name="closed" value="true" />
+      <created>1696093592948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696093592948</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +90,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;styles/Nunito/Nunito-Italic-VariableFont_wght.ttf&#10;#&#9;styles/Nunito/Nunito-VariableFont_wght.ttf&#10;#&#9;styles/Nunito/OFL.txt&#10;#&#9;styles/Nunito/README.txt&#10;#&#9;styles/Nunito/static/Nunito-Black.ttf&#10;#&#9;styles/Nunito/static/Nunito-BlackItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Bold.ttf&#10;#&#9;styles/Nunito/static/Nunito-BoldItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-ExtraBold.ttf&#10;#&#9;styles/Nunito/static/Nunito-ExtraBoldItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-ExtraLight.ttf&#10;#&#9;styles/Nunito/static/Nunito-ExtraLightItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Italic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Light.ttf&#10;#&#9;styles/Nunito/static/Nunito-LightItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Medium.ttf&#10;#&#9;styles/Nunito/static/Nunito-MediumItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Regular.ttf&#10;#&#9;styles/Nunito/static/Nunito-SemiBold.ttf&#10;#&#9;styles/Nunito/static/Nunito-SemiBoldItalic.ttf&#10;#&#9;styles/style.css" />
     <MESSAGE value="adding intelliJ files" />
     <MESSAGE value="finished loading bar at the bottom with display: flex" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished loading bar at the bottom with display: flex" />
+    <MESSAGE value="Adding google doc cheatsheet to the personal page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding google doc cheatsheet to the personal page" />
   </component>
 </project>
