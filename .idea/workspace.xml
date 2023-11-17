@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="Adding google doc cheatsheet to the personal page" />
+    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="adding a navigation bar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +74,18 @@
       <workItem from="1695140059043" duration="2071000" />
       <workItem from="1695635525552" duration="4285000" />
       <workItem from="1696092287538" duration="1316000" />
+      <workItem from="1696094804149" duration="676000" />
+      <workItem from="1697623444027" duration="1279000" />
+      <workItem from="1697639591361" duration="3927000" />
+      <workItem from="1699966335509" duration="417000" />
+      <workItem from="1700210318006" duration="6987000" />
+      <workItem from="1700849860122" duration="2130000" />
+      <workItem from="1701104757701" duration="1334000" />
+      <workItem from="1701329489755" duration="2033000" />
+      <workItem from="1701677238671" duration="621000" />
+      <workItem from="1701763193892" duration="1067000" />
+      <workItem from="1701931087166" duration="2232000" />
+      <workItem from="1702134977980" duration="624000" />
     </task>
     <task id="LOCAL-00003" summary="Adding google doc cheatsheet to the personal page">
       <option name="closed" value="true" />
@@ -80,17 +95,55 @@
       <option name="project" value="LOCAL" />
       <updated>1696093592948</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="stolen 'responsive design'">
+      <option name="closed" value="true" />
+      <created>1696094860612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696094860612</updated>
+    </task>
+    <task id="LOCAL-00005" summary="changing units into relative ones for responsive design">
+      <option name="closed" value="true" />
+      <created>1700219390145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700219390145</updated>
+    </task>
+    <task id="LOCAL-00006" summary="adding a navigation bar">
+      <option name="closed" value="true" />
+      <created>1701331071081</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701331071081</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;styles/Nunito/Nunito-Italic-VariableFont_wght.ttf&#10;#&#9;styles/Nunito/Nunito-VariableFont_wght.ttf&#10;#&#9;styles/Nunito/OFL.txt&#10;#&#9;styles/Nunito/README.txt&#10;#&#9;styles/Nunito/static/Nunito-Black.ttf&#10;#&#9;styles/Nunito/static/Nunito-BlackItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Bold.ttf&#10;#&#9;styles/Nunito/static/Nunito-BoldItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-ExtraBold.ttf&#10;#&#9;styles/Nunito/static/Nunito-ExtraBoldItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-ExtraLight.ttf&#10;#&#9;styles/Nunito/static/Nunito-ExtraLightItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Italic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Light.ttf&#10;#&#9;styles/Nunito/static/Nunito-LightItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Medium.ttf&#10;#&#9;styles/Nunito/static/Nunito-MediumItalic.ttf&#10;#&#9;styles/Nunito/static/Nunito-Regular.ttf&#10;#&#9;styles/Nunito/static/Nunito-SemiBold.ttf&#10;#&#9;styles/Nunito/static/Nunito-SemiBoldItalic.ttf&#10;#&#9;styles/style.css" />
     <MESSAGE value="adding intelliJ files" />
     <MESSAGE value="finished loading bar at the bottom with display: flex" />
     <MESSAGE value="Adding google doc cheatsheet to the personal page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding google doc cheatsheet to the personal page" />
+    <MESSAGE value="stolen 'responsive design'" />
+    <MESSAGE value="changing units into relative ones for responsive design" />
+    <MESSAGE value="adding a navigation bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a navigation bar" />
   </component>
 </project>

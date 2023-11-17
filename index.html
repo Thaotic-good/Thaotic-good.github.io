@@ -8,13 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:wght@300&display=swap"
           rel="stylesheet">
     <!-- defer attribute= cleaner for reading, script is going to load sooner -->
-    <script src="scripts/main.js" defer></script>
+<!--    <script src="scripts/main.js" defer></script>-->
 </head>
 
 <body>
-<div class="header">
+<nav class="navigation-bar">
+        <ul class="nav-links">
+            <li class="nav-home"><a  href="https://thaotic-good.github.io/">Thaotic-good</a></li>
+            <li class="task-manager-link"><a href="xxx">Task manager</a></li>
+            <li class="blog-link"><a href="https://thaotic-good.github.io/blog/">Blog</a></li>
+        </ul>
+</nav>
+
+<nav class="header">
     <h1>Hello, welcome to my personal page!</h1>
-</div>
+</nav>
+
 <div class="about-me">
     <h2>A little about me</h2>
     <p> My name is Dong Thi Thu Thao, but everybody calls me Martina. I'm self-studying to become a programmer.
@@ -103,8 +112,8 @@
 <div class="personaliye-button">
     <button>Personalize my welcome message</button>
 </div>
-<div id="div1">
-    <div id="div2"></div>
+<div id="loading-bar-container">
+    <div id="loading-bar"></div>
     <p>Programmer brain: 3% loading...</p>
 </div>
 </body>
