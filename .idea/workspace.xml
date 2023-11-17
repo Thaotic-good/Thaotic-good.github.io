@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="Adding google doc cheatsheet to the personal page" />
+    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="stolen 'responsive design'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +75,11 @@
       <workItem from="1695140059043" duration="2071000" />
       <workItem from="1695635525552" duration="4285000" />
       <workItem from="1696092287538" duration="1316000" />
+      <workItem from="1696094804149" duration="676000" />
+      <workItem from="1697623444027" duration="1279000" />
+      <workItem from="1697639591361" duration="3927000" />
+      <workItem from="1699966335509" duration="417000" />
+      <workItem from="1700210318006" duration="5014000" />
     </task>
     <task id="LOCAL-00003" summary="Adding google doc cheatsheet to the personal page">
       <option name="closed" value="true" />
@@ -80,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696093592948</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="stolen 'responsive design'">
+      <option name="closed" value="true" />
+      <created>1696094860612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696094860612</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +108,7 @@
     <MESSAGE value="adding intelliJ files" />
     <MESSAGE value="finished loading bar at the bottom with display: flex" />
     <MESSAGE value="Adding google doc cheatsheet to the personal page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding google doc cheatsheet to the personal page" />
+    <MESSAGE value="stolen 'responsive design'" />
+    <option name="LAST_COMMIT_MESSAGE" value="stolen 'responsive design'" />
   </component>
 </project>
