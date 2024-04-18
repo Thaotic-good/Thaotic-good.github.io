@@ -4,9 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="adding a navigation bar">
+    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html">
+      <change afterPath="$PROJECT_DIR$/my-portfolio/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/expectationsfin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/expectationsFinal.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,23 +51,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Thu Thao Dongová/IdeaProjects/Thaotic-good.github.io/my-portfolio",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "http.proxy",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -86,6 +111,11 @@
       <workItem from="1701763193892" duration="1067000" />
       <workItem from="1701931087166" duration="2232000" />
       <workItem from="1702134977980" duration="624000" />
+      <workItem from="1702552945511" duration="680000" />
+      <workItem from="1703062127942" duration="197000" />
+      <workItem from="1703089729454" duration="144000" />
+      <workItem from="1704403842821" duration="691000" />
+      <workItem from="1713432392078" duration="1972000" />
     </task>
     <task id="LOCAL-00003" summary="Adding google doc cheatsheet to the personal page">
       <option name="closed" value="true" />
@@ -119,7 +149,39 @@
       <option name="project" value="LOCAL" />
       <updated>1701331071081</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding a navigation bar">
+      <option name="closed" value="true" />
+      <created>1702552986905</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702552986905</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html">
+      <option name="closed" value="true" />
+      <created>1702553176010</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702553176010</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html">
+      <option name="closed" value="true" />
+      <created>1702553247791</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702553247791</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html">
+      <option name="closed" value="true" />
+      <created>1702553314477</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702553314477</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +206,7 @@
     <MESSAGE value="stolen 'responsive design'" />
     <MESSAGE value="changing units into relative ones for responsive design" />
     <MESSAGE value="adding a navigation bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a navigation bar" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html" />
   </component>
 </project>
