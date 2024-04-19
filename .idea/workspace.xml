@@ -4,38 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html">
-      <change afterPath="$PROJECT_DIR$/my-portfolio/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-portfolio/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="portfolio react app init">
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NavigationBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/expectationsfin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/expectationsFinal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Thu Thao Dongová/IdeaProjects/Thaotic-good.github.io/my-portfolio",
+    "last_opened_file_path": "C:/Users/Thu Thao Dongová/IdeaProjects/Thaotic-good.github.io",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -66,9 +74,16 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "http.proxy",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Thu Thao Dongová\IdeaProjects\Thaotic-good.github.io" />
+      <recent name="C:\Users\Thu Thao Dongová\IdeaProjects\Thaotic-good.github.io\my-portfolio" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -115,7 +130,8 @@
       <workItem from="1703062127942" duration="197000" />
       <workItem from="1703089729454" duration="144000" />
       <workItem from="1704403842821" duration="691000" />
-      <workItem from="1713432392078" duration="1972000" />
+      <workItem from="1713432392078" duration="6066000" />
+      <workItem from="1713511754164" duration="3008000" />
     </task>
     <task id="LOCAL-00003" summary="Adding google doc cheatsheet to the personal page">
       <option name="closed" value="true" />
@@ -181,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702553314477</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="portfolio react app init">
+      <option name="closed" value="true" />
+      <created>1713436529281</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713436529281</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +231,7 @@
     <MESSAGE value="changing units into relative ones for responsive design" />
     <MESSAGE value="adding a navigation bar" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html" />
+    <MESSAGE value="portfolio react app init" />
+    <option name="LAST_COMMIT_MESSAGE" value="portfolio react app init" />
   </component>
 </project>
