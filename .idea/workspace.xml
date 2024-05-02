@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="manually converting boilerplate code from .js to .ts because I didn't initiate React app in typescript template">
-      <change afterPath="$PROJECT_DIR$/src/img/Thaotic-good-logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Thaotic-good-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/typeDeclarations.d.ts" afterDir="false" />
+    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="importing of img fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NavigationBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NavigationBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +49,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Thu Thao Dongová\\IdeaProjects\\Thaotic-good.github.io\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -114,7 +108,10 @@
       <workItem from="1704403842821" duration="691000" />
       <workItem from="1713432392078" duration="6066000" />
       <workItem from="1713511754164" duration="3008000" />
-      <workItem from="1714062104495" duration="308000" />
+      <workItem from="1714062104495" duration="742000" />
+      <workItem from="1714124488467" duration="2320000" />
+      <workItem from="1714290124806" duration="7050000" />
+      <workItem from="1714558042352" duration="10729000" />
     </task>
     <task id="LOCAL-00003" summary="Adding google doc cheatsheet to the personal page">
       <option name="closed" value="true" />
@@ -188,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713436529281</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="importing of img fix">
+      <option name="closed" value="true" />
+      <created>1714062834598</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714062834598</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +220,7 @@
     <MESSAGE value="adding a navigation bar" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html" />
     <MESSAGE value="portfolio react app init" />
-    <option name="LAST_COMMIT_MESSAGE" value="portfolio react app init" />
+    <MESSAGE value="importing of img fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="importing of img fix" />
   </component>
 </project>
