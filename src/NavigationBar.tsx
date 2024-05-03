@@ -1,15 +1,3 @@
-/*Initial Setup: The project needs to be set up with TypeScript. This usually involves:
-Installing TypeScript and type definitions for React (npm install typescript @types/react @types/react-dom).
-Adding a tsconfig.json file to specify TypeScript compiler options.
-Ensuring that your build tool (e.g., Webpack used by create-react-app) is configured to use TypeScript, which is handled automatically if you use create-react-app with the TypeScript template.
-Write the Component: You create a React component in a .ts or .tsx file. This involves:
-Using TypeScript syntax for type annotations.
-Potentially defining interfaces or types for props and state to enforce type safety.
-Import the Component: Similar to JavaScript, you import this component into your App.tsx (previously App.js). TypeScript will check imports for type correctness.
-Running the App: You run npm start, which does more than in the JavaScript setup:
-Type Checking: TypeScript compiler checks your code for type errors. This happens before the app runs. If there are type errors, TypeScript will report them, and you’ll need to fix these issues to proceed.
-Compilation: The TypeScript compiler (tsc) transpiles TypeScript files into JavaScript. This is necessary because browsers cannot execute TypeScript directly. The transpiled code includes the compiled JavaScript from your .ts or .tsx files.
-Bundling and Serving: Similar to the JavaScript workflow, the bundled files are served by the development server.*/
 import React, {useState} from "react"
 import logo from "./img/Thaotic-good-logo.jpg"
 
@@ -24,13 +12,11 @@ import logo from "./img/Thaotic-good-logo.jpg"
 * aria-current="page" = used for highlighting the current link that we are on in a set of links
 * sm:ml-6 = margin-left
 * sm:block = makes element visible on screens with breakpoints larger than sm
-* sr-only = hides element visually but not from screen readers
-*
-* */
-function NavigationBar() {
-    const [showMenu, setShowMenu] = useState(false)
+* sr-only = hides element visually but not from screen readers */
+function NavigationBar():React.JSX.Element {
+    const [showMenu, setShowMenu] = useState<boolean>(false)
 
-    const handleClick= ()=> {
+    const handleClick= ():void => {
         setShowMenu(!showMenu)
         console.log(showMenu)
     }

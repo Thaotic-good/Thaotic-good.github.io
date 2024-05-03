@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="importing of img fix">
+    <list default="true" id="29f76490-e557-4579-a7dd-d0208e55c618" name="Changes" comment="responsive navigation bar done">
+      <change afterPath="$PROJECT_DIR$/src/HeroSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/expectationsFinal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/reality.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NavigationBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NavigationBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,26 +39,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Thu Thao Dongová/IdeaProjects/Thaotic-good.github.io&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Thu Thao Dongová\\IdeaProjects\\Thaotic-good.github.io\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Thu Thao Dongová/IdeaProjects/Thaotic-good.github.io/src/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Users\\Thu Thao Dongová\\IdeaProjects\\Thaotic-good.github.io\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Thu Thao Dongová\IdeaProjects\Thaotic-good.github.io\src\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Thu Thao Dongová\IdeaProjects\Thaotic-good.github.io" />
       <recent name="C:\Users\Thu Thao Dongová\IdeaProjects\Thaotic-good.github.io\my-portfolio" />
@@ -111,7 +118,8 @@
       <workItem from="1714062104495" duration="742000" />
       <workItem from="1714124488467" duration="2320000" />
       <workItem from="1714290124806" duration="7050000" />
-      <workItem from="1714558042352" duration="10729000" />
+      <workItem from="1714558042352" duration="12741000" />
+      <workItem from="1714766735891" duration="2817000" />
     </task>
     <task id="LOCAL-00003" summary="Adding google doc cheatsheet to the personal page">
       <option name="closed" value="true" />
@@ -193,7 +201,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714062834598</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="responsive navigation bar done">
+      <option name="closed" value="true" />
+      <created>1714665665592</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714665665592</updated>
+    </task>
+    <task id="LOCAL-00014" summary="responsive navigation bar done">
+      <option name="closed" value="true" />
+      <created>1714665810474</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714665810474</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +245,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.html" />
     <MESSAGE value="portfolio react app init" />
     <MESSAGE value="importing of img fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="importing of img fix" />
+    <MESSAGE value="responsive navigation bar done" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive navigation bar done" />
   </component>
 </project>
