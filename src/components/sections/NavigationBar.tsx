@@ -11,7 +11,7 @@ Type Checking: TypeScript compiler checks your code for type errors. This happen
 Compilation: The TypeScript compiler (tsc) transpiles TypeScript files into JavaScript. This is necessary because browsers cannot execute TypeScript directly. The transpiled code includes the compiled JavaScript from your .ts or .tsx files.
 Bundling and Serving: Similar to the JavaScript workflow, the bundled files are served by the development server.*/
 import React from "react"
-import logo from "./img/Thaotic-good-logo.jpg"
+import logo from "../../img/Thaotic-good-logo.jpg"
 
 function NavigationBar() {
     return (
