@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import useGazeTracking from './useGazeTracking';
 import { cn } from "../../utils/utils";
 
 type FaceTrackerProps = {
     className?: string;
     basePath?: string;
+    containerRef: React.RefObject<HTMLDivElement>;
 }
 
 /**
@@ -16,8 +17,8 @@ const DEFAULT_BASE_PATH = (typeof process !== 'undefined' && (process as any).en
 export default function FaceTracker({
     className = '',
     basePath = DEFAULT_BASE_PATH,
+    containerRef,
 }: FaceTrackerProps) {
-    const containerRef = useRef<HTMLDivElement | null>(null);
 
     const { currentImage, isLoading, error } = useGazeTracking(containerRef, basePath);
 
@@ -30,14 +31,14 @@ export default function FaceTracker({
     }
 
     return (
-      <div          ref={containerRef}
-        className={cn(`relative w-full h-full bg-gray-100 rounded-lg overflow-hidden cursor-none`, className)}
+      <div
+        className={cn(`relative w-full h-full bg-transparent overflow-hidden`, className)}
       >
           {currentImage && (
             <img
               src={currentImage}
               alt="Face following gaze"
-              className="w-52 h-52 object-contain transition-opacity duration-100 ease-out select-none pointer-events-none"
+              className="w-52 h-52 object-contain transition-opacity rounded-full duration-100 ease-out select-none pointer-events-none"
             />
           )}
 

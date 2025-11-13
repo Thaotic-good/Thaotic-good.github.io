@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 // Allow Webpack's require.context in CRA
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -60,6 +60,26 @@ export function useGazeTracking(
     } catch (_) {
         // ignore if require.context is unavailable (e.g., non-CRA env)
     }
+
+    // Preload all gaze images on mount to warm the HTTP and decode cache
+    const preloadedRef = useRef<HTMLImageElement[]>([]);
+    useEffect(() => {
+        const imgs: HTMLImageElement[] = [];
+        for (let py = P_MIN; py <= P_MAX; py += STEP) {
+            for (let px = P_MIN; px <= P_MAX; px += STEP) {
+                const filename = gridToFilename(px, py);
+                const url = filenameToUrl[filename] || `${basePath}${filename}`;
+                const img = new Image();
+                img.loading = 'eager';
+                img.decoding = 'async';
+                img.src = url;
+                imgs.push(img);
+            }
+        }
+        preloadedRef.current = imgs;
+        // no cleanup required; keep images in memory to preserve cache
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [basePath]);
 
 
     const updateGaze = useCallback((clientX: number, clientY: number) => {

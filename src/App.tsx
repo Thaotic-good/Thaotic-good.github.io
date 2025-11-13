@@ -1,36 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import FaceTracker from "./components/ui/FaceTracker";
 
 function App() {
+    const containerRef = useRef<HTMLDivElement | null>(null);
 
     return (
-    <div
-                 className="min-h-screen bg-gradient-to-tr from-blue-500 to-pink-300">
-        <div className='flex justify-center items-center'>
-            <h1>My Portfolio</h1>
-            {/* With custom styling */}
-            <FaceTracker
-              className="h-full w-full flex justify-center"
-              // basePath should point to the directory that contains the gaze images and end with a trailing slash
+    <div           ref={containerRef} className="min-h-screen min-w-screen flex grid-cols-3 justify-center items-center z-10">
+        <div className="flex-grow min-h-screen flex flex-col justify-center items-center "><div className="bg-amber-400">hscnsdjkvnf</div><div className="bg-amber-400">hscnsdjkvnf</div><div className="bg-amber-400">hscnsdjkvnf</div></div>
+        <div className="min-h-screen flex flex-col justify-center items-center">
+            <div className="w-fit flex flex-col justify-center items-center gap-4">
+                <div //tooltip bubble from shadcn!
+                  >
+                <div className="flex justify-center items-center w-52 h-32 rounded-full bg-amber-400"><span>My quote</span></div>
+                    <div className="ml-28 w-0 h-0 border-[20px] border-transparent border-t-amber-400 border-b-0"></div>
+                </div>
+                <FaceTracker
+                  className="flex flex-col justify-center items-center"
               basePath="/assets/face_looker/faces/"
-            />
-        </div>
-      {/*<div className="max-w-5xl mx-auto pt-24 pb-8 px-6 md:px-10">*/}
-      {/*  <div className="bg-white border-8 border-black p-6 md:p-10">*/}
-      {/*    <main>*/}
-      {/*      <Welcome />*/}
-      {/*      <AboutMe />*/}
-      {/*      <ProgrammingSkills />*/}
-      {/*      <Education />*/}
-      {/*      <LanguageSkills />*/}
-      {/*      <Tutoring />*/}
-      {/*      <ContactInfo />*/}
-      {/*    </main>*/}
-      {/*    <footer className="mt-6">*/}
-      {/*      <LoadingBar />*/}
-      {/*    </footer>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
+              containerRef={containerRef}
+
+        />
+            </div>
+    </div>
+        <div className="flex-grow min-h-screen flex flex-col justify-center items-center "><div className="bg-amber-400">hscnsdjkvnf</div><div className="bg-amber-400">hscnsdjkvnf</div><div className="bg-amber-400">hscnsdjkvnf</div></div>
     </div>
   );
 }
