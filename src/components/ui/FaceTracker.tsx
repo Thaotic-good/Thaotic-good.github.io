@@ -12,8 +12,7 @@ type FaceTrackerProps = {
  * FaceTracker Component
  * Displays a face that follows mouse/touch movement
  */
-// const DEFAULT_BASE_PATH = (typeof process !== 'undefined' && (process as any).env && (process as any).env.PUBLIC_URL ? (process as any).env.PUBLIC_URL : '') + '/assets/face_looker/faces/';
-const DEFAULT_BASE_PATH = '/assets/face_looker/faces/';
+const DEFAULT_BASE_PATH = `${import.meta.env.BASE_URL}src/assets/face_looker/faces/`;
 export default function FaceTracker({
     className = '',
     basePath = DEFAULT_BASE_PATH,

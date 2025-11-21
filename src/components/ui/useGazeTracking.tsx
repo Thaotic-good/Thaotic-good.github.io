@@ -39,7 +39,8 @@ export type GazeTrackingResult = {
  * @param {string} basePath - Fallback base path to the directory containing gaze images (should end with a trailing slash), e.g. '/assets/face_looker/faces/'
  * @returns {Object} { currentImage, isLoading, error }
  */
-const DEFAULT_BASE_PATH = (typeof process !== 'undefined' && (process as any).env && (process as any).env.PUBLIC_URL ? (process as any).env.PUBLIC_URL : '') + '/assets/face_looker/faces/';
+// const DEFAULT_BASE_PATH = (typeof process !== 'undefined' && (process as any).env && (process as any).env.PUBLIC_URL ? (process as any).env.PUBLIC_URL : '') + '/assets/face_looker/faces/';
+const DEFAULT_BASE_PATH = `${import.meta.env.BASE_URL}assets/face_looker/faces/`;
 
 export function useGazeTracking(
     containerRef: React.RefObject<HTMLDivElement>,
