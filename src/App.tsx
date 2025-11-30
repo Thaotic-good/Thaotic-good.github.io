@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useRef } from "react";
-import FaceTracker from "./components/ui/FaceTracker";
+import GazeTracker from "./components/ui/GazeTracker";
 import {
   Item,
   ItemGroup,
@@ -55,20 +55,17 @@ const App = () => {
           <ItemSeparator />
           <HomeItem
             variant="outline"
-            title={<>Socials</>}
+            title={<>Get in touch</>}
             actions={
               <ItemActions className='border-none'>
                 <button className="text-xs px-2 py-1 rounded bg-amber-200 hover:bg-amber-300">
                   <ItemMedia className='border-none' variant="icon">🧭</ItemMedia>
-                  View
                 </button>
                 <button className="text-xs px-2 py-1 rounded bg-amber-200 hover:bg-amber-300">
                   <ItemMedia className='border-none' variant="icon">🧭</ItemMedia>
-                  View
                 </button>
                 <button className="text-xs px-2 py-1 rounded bg-amber-200 hover:bg-amber-300">
                   <ItemMedia className='border-none' variant="icon">🧭</ItemMedia>
-                  View
                 </button>
               </ItemActions>
             }
@@ -88,7 +85,7 @@ const App = () => {
               <div className="ml-32 w-0 h-0 border-[20px] border-transparent border-t-amber-400 border-b-0" />
             </div>
 
-            <FaceTracker
+            <GazeTracker
               className="w-full flex justify-center items-center rounded-md p-2"
               containerRef={containerRef}
             />

@@ -1,6 +1,6 @@
 import React from 'react';
-import useGazeTracking from './useGazeTracking';
-import { cn } from "../../utils/utils";
+import useCursorTracking from './useCursorTracking';
+import { cn } from "@/utils/utils";
 
 type FaceTrackerProps = {
     className?: string;
@@ -12,14 +12,14 @@ type FaceTrackerProps = {
  * FaceTracker Component
  * Displays a face that follows mouse/touch movement
  */
-const DEFAULT_BASE_PATH = `${import.meta.env.BASE_URL}src/assets/face_looker/faces/`;
-export default function FaceTracker({
+const DEFAULT_BASE_PATH = `${import.meta.env.BASE_URL}src/assets/following_gaze/faces/`;
+export default function GazeTracker({
     className = '',
     basePath = DEFAULT_BASE_PATH,
     containerRef,
 }: FaceTrackerProps) {
 
-    const { currentImage, isLoading, error } = useGazeTracking(containerRef, basePath);
+    const { currentImage, isLoading, error } = useCursorTracking(containerRef, basePath);
 
     if (error) {
         return (

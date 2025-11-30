@@ -36,13 +36,13 @@ export type GazeTrackingResult = {
 /**
  * Custom hook for gaze tracking
  * @param {React.RefObject} containerRef - Reference to the container element
- * @param {string} basePath - Fallback base path to the directory containing gaze images (should end with a trailing slash), e.g. '/assets/face_looker/faces/'
+ * @param {string} basePath - Fallback base path to the directory containing gaze images (should end with a trailing slash), e.g. '/assets/following_gaze/faces/'
  * @returns {Object} { currentImage, isLoading, error }
  */
-// const DEFAULT_BASE_PATH = (typeof process !== 'undefined' && (process as any).env && (process as any).env.PUBLIC_URL ? (process as any).env.PUBLIC_URL : '') + '/assets/face_looker/faces/';
-const DEFAULT_BASE_PATH = `${import.meta.env.BASE_URL}assets/face_looker/faces/`;
+// const DEFAULT_BASE_PATH = (typeof process !== 'undefined' && (process as any).env && (process as any).env.PUBLIC_URL ? (process as any).env.PUBLIC_URL : '') + '/assets/following_gaze/faces/';
+const DEFAULT_BASE_PATH = `${import.meta.env.BASE_URL}assets/following_gaze/faces/`;
 
-export function useGazeTracking(
+export function useCursorTracking(
     containerRef: React.RefObject<HTMLDivElement>,
     basePath: string = DEFAULT_BASE_PATH
 ): GazeTrackingResult {
@@ -53,7 +53,7 @@ export function useGazeTracking(
     // Build a map of filename -> URL for images under src using Webpack's require.context (CRA)
     const filenameToUrl: Record<string, string> = {};
     try {
-        const ctx = require.context('../../assets/face_looker/faces', false, /\.webp$/);
+        const ctx = require.context('../../assets/following_gaze/faces', false, /\.webp$/);
         ctx.keys().forEach((key: string) => {
             const name = key.replace('./', '');
             filenameToUrl[name] = ctx(key).default ? ctx(key).default : ctx(key);
@@ -143,4 +143,4 @@ export function useGazeTracking(
     return { currentImage, isLoading, error };
 }
 
-export default useGazeTracking;
+export default useCursorTracking;
