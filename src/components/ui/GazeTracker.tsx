@@ -12,7 +12,7 @@ type FaceTrackerProps = {
  * FaceTracker Component
  * Displays a face that follows mouse/touch movement
  */
-const DEFAULT_BASE_PATH = `${import.meta.env.BASE_URL}src/assets/following_gaze/faces/`;
+const DEFAULT_BASE_PATH = `${import.meta.env.BASE_URL}assets/following_gaze/faces/`;
 export default function GazeTracker({
     className = '',
     basePath = DEFAULT_BASE_PATH,

@@ -50,16 +50,19 @@ export function useCursorTracking(
     const [isLoading] = useState<boolean>(false);
     const [error] = useState<Error | null>(null);
 
-    // Build a map of filename -> URL for images under src using Webpack's require.context (CRA)
+    // Build a map of filename -> URL for images under src using Vite's import.meta.glob
     const filenameToUrl: Record<string, string> = {};
     try {
-        const ctx = require.context('../../assets/following_gaze/faces', false, /\.webp$/);
-        ctx.keys().forEach((key: string) => {
-            const name = key.replace('./', '');
-            filenameToUrl[name] = ctx(key).default ? ctx(key).default : ctx(key);
+        const modules = import.meta.glob('../../assets/following_gaze/faces/*.webp', { as: 'url', eager: true });
+        Object.keys(modules).forEach((path) => {
+            const parts = path.split('/');
+            const name = parts[parts.length - 1];
+            // modules[path] is a URL string when using { as: 'url', eager: true }
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            filenameToUrl[name] = (modules as any)[path] as string;
         });
     } catch (_) {
-        // ignore if require.context is unavailable (e.g., non-CRA env)
+        // ignore if glob is unavailable (should not happen in Vite); fallback to basePath
     }
 
     // Preload all gaze images on mount to warm the HTTP and decode cache
