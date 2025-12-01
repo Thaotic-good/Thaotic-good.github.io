@@ -18,9 +18,9 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc -p tsconfig.app.json --noEmit && vite build",
     "preview": "vite preview",
-    "tsc": "tsc --noEmit",
+    "tsc": "tsc -p tsconfig.app.json --noEmit",
     "lint": "eslint . --ext ts,tsx"
   },
   "browserslist": {

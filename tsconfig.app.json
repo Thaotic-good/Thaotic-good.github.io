@@ -15,5 +15,10 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/__tests__/**"
   ]
 }
