@@ -1,8 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
-// Allow Webpack's require.context in CRA
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-declare const require: any;
 
 // Grid configuration (must match your generation parameters)
 const P_MIN = -15;
@@ -53,7 +50,7 @@ export function useCursorTracking(
     // Build a map of filename -> URL for images under src using Vite's import.meta.glob
     const filenameToUrl: Record<string, string> = {};
     try {
-        const modules = import.meta.glob('../../assets/following_gaze/faces/*.webp', { as: 'url', eager: true });
+        const modules = import.meta.glob('../../assets/following_gaze/faces/*.webp', { query: '?url', import: 'default', eager: true });
         Object.keys(modules).forEach((path) => {
             const parts = path.split('/');
             const name = parts[parts.length - 1];
@@ -72,7 +69,14 @@ export function useCursorTracking(
         for (let py = P_MIN; py <= P_MAX; py += STEP) {
             for (let px = P_MIN; px <= P_MAX; px += STEP) {
                 const filename = gridToFilename(px, py);
-                const url = filenameToUrl[filename] || `${basePath}${filename}`;
+                let url = filenameToUrl[filename];
+                if (!url) {
+                    try {
+                        url = new URL(`../../assets/following_gaze/faces/${filename}`, import.meta.url).href;
+                    } catch (_) {
+                        url = `${basePath}${filename}`;
+                    }
+                }
                 const img = new Image();
                 img.loading = 'eager';
                 img.decoding = 'async';
@@ -107,7 +111,14 @@ export function useCursorTracking(
 
         // Generate filename
         const filename = gridToFilename(px, py);
-        const resolvedUrl = filenameToUrl[filename] || `${basePath}${filename}`;
+        let resolvedUrl = filenameToUrl[filename];
+        if (!resolvedUrl) {
+            try {
+                resolvedUrl = new URL(`../../assets/following_gaze/faces/${filename}`, import.meta.url).href;
+            } catch (_) {
+                resolvedUrl = `${basePath}${filename}`;
+            }
+        }
 
         setCurrentImage(resolvedUrl);
     }, [basePath, containerRef]);
