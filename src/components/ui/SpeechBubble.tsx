@@ -1,0 +1,44 @@
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { cn } from "@/utils/utils";
+
+interface SpeechBubbleProps {
+  children: React.ReactNode;
+  className?: string;
+  /** Delay before the enter animation starts (seconds) */
+  delay?: number;
+}
+
+/**
+ * Glassmorphism speech-bubble card that animates in when scrolled into view.
+ * The CSS triangle points LEFT on desktop (toward the GazeTracker) and UP on mobile.
+ */
+export default function SpeechBubble({ children, className, delay = 0 }: SpeechBubbleProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: false, amount: 0.3 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+      transition={{ duration: 0.5, ease: "easeOut", delay }}
+      className={cn(
+        "relative backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 shadow-lg",
+        className
+      )}
+    >
+      {/* Pointer — points RIGHT on md+ (toward avatar), UP on mobile */}
+      <div
+        className={cn(
+          "absolute",
+          // Mobile: centered top pointer
+          "left-1/2 -top-3 -translate-x-1/2 border-l-[12px] border-r-[12px] border-b-[12px] border-l-transparent border-r-transparent border-b-white/20",
+          // Desktop: right-side pointer
+          "md:left-auto md:right-0 md:top-8 md:translate-x-full md:translate-y-0 md:border-r-0 md:border-l-[12px] md:border-t-[12px] md:border-b-[12px] md:border-t-transparent md:border-b-transparent md:border-l-white/20"
+        )}
+      />
+      {children}
+    </motion.div>
+  );
+}
