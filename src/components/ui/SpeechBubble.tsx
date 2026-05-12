@@ -24,7 +24,7 @@ export default function SpeechBubble({ children, className, delay = 0 }: SpeechB
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.5, ease: "easeOut", delay }}
       className={cn(
-        "relative backdrop-blur-md bg-white/20 border border-white/40 rounded-2xl p-6 shadow-lg",
+        "relative backdrop-blur-md bg-white/20 border border-white/40 rounded-2xl p-6 shadow-lg lg:scale-110",
         className
       )}
     >

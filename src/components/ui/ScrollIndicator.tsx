@@ -24,7 +24,7 @@ export default function ScrollIndicator() {
     <nav
       className={cn(
         "fixed left-4 top-1/2 -translate-y-1/2 z-50 flex-col gap-4 items-center",
-        "hidden md:flex"
+        "hidden md:flex lg:scale-110 lg:origin-left"
       )}
       aria-label="Section navigation"
     >

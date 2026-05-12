@@ -26,12 +26,14 @@ function AppLayout() {
         </main>
       {/* ── Right column: fixed GazeTracker ── */}
       <aside className="sticky top-0 z-20 flex flex-col items-center justify-center bg-transparent md:fixed md:inset-y-0 md:right-0 md:w-2/5 shrink-0 p-6">
-        <GazeTracker
-          className="flex justify-center items-center"
-          containerRef={containerRef}
-          activeSection={activeSection}
-        />
-        <p className="mt-3 text-xs text-muted-foreground">Tip: the face follows your cursor!</p>
+        <div className="flex flex-col items-center lg:scale-110">
+          <GazeTracker
+            className="flex justify-center items-center"
+            containerRef={containerRef}
+            activeSection={activeSection}
+          />
+          <p className="mt-3 text-xs text-muted-foreground">Tip: Keep scrolling!</p>
+        </div>
       </aside>
 
 
