@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import useCursorTracking from './useCursorTracking';
 import { cn } from "@/utils/utils";
@@ -16,6 +16,7 @@ type FaceTrackerProps = {
     basePath?: string;
     containerRef: React.RefObject<HTMLDivElement>;
     activeSection?: SectionId;
+    gazeTarget?: { x: number; y: number } | null;
 }
 
 /**
@@ -29,13 +30,21 @@ export default function GazeTracker({
     basePath = DEFAULT_BASE_PATH,
     containerRef,
     activeSection,
+    gazeTarget,
 }: FaceTrackerProps) {
 
-    const { currentImage, isLoading, error } = useCursorTracking(containerRef, basePath);
+    const { currentImage, isLoading, error, updateGaze } = useCursorTracking(containerRef, basePath);
+
+    // When idle, drive gaze from the ghost cursor position instead of the real mouse
+    useEffect(() => {
+        if (gazeTarget != null) {
+            updateGaze(gazeTarget.x, gazeTarget.y);
+        }
+    }, [gazeTarget, updateGaze]);
 
     if (error) {
         return (
-          <div className="flex items-center justify-center h-[200px] text-red-600 bg-red-50 border border-red-200 rounded p-5">
+          <div className="flex items-center justify-center h-50 text-red-600 bg-red-50 border border-red-200 rounded p-5">
               Error loading face images: {error.message}
           </div>
         );

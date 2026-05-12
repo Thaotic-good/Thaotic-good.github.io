@@ -28,6 +28,7 @@ export type GazeTrackingResult = {
     currentImage: string | null;
     isLoading: boolean;
     error: Error | null;
+    updateGaze: (clientX: number, clientY: number) => void;
 };
 
 /**
@@ -154,7 +155,7 @@ export function useCursorTracking(
         };
     }, [containerRef, handleMouseMove, handleTouchMove, updateGaze]);
 
-    return { currentImage, isLoading, error };
+    return { currentImage, isLoading, error, updateGaze };
 }
 
 export default useCursorTracking;

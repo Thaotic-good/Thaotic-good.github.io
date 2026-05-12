@@ -33,9 +33,9 @@ export default function SpeechBubble({ children, className, delay = 0 }: SpeechB
         className={cn(
           "absolute",
           // Mobile: centered bottom pointer
-          "left-1/2 -bottom-3 -translate-x-1/2 border-l-[12px] border-r-[12px] border-t-[12px] border-l-transparent border-r-transparent border-t-white/30",
+          "left-1/2 -bottom-3 -translate-x-1/2 border-l-12 border-r-12 border-t-12 border-l-transparent border-r-transparent border-t-white/30",
           // Desktop: right-side pointer
-          "md:bottom-auto md:left-auto md:right-0 md:top-8 md:translate-x-full md:translate-y-0 md:border-r-0 md:border-l-[12px] md:border-t-[12px] md:border-b-[12px] md:border-t-transparent md:border-b-transparent md:border-l-white/30"
+          "md:bottom-auto md:left-auto md:right-0 md:top-8 md:translate-x-full md:translate-y-0 md:border-r-0 md:border-l-12 md:border-t-12 md:border-b-12 md:border-t-transparent md:border-b-transparent md:border-l-white/30"
         )}
       />
       {children}

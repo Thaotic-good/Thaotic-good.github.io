@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { useIdleGhost } from "@/hooks/useIdleGhost";
+import { GhostCursor } from "@/components/ui/ghost-cursor";
 import { ScrollContextProvider, useScrollContext } from "./context/ScrollContext";
 import GazeTracker from "./components/ui/GazeTracker";
 import ScrollIndicator from "./components/ui/ScrollIndicator";
@@ -11,6 +13,7 @@ import EducationSection from "./components/sections/EducationSection";
 function AppLayout() {
   const { activeSection, scrollContainerRef } = useScrollContext();
   const containerRef = useRef<HTMLDivElement>(null!);
+  const { isIdle, ghostPos } = useIdleGhost();
 
   return (
     <div ref={containerRef} className="h-screen w-screen flex flex-col md:flex-row">
@@ -31,12 +34,16 @@ function AppLayout() {
             className="flex justify-center items-center"
             containerRef={containerRef}
             activeSection={activeSection}
+            gazeTarget={isIdle ? ghostPos : null}
           />
           <p className="mt-3 text-xs text-muted-foreground">Tip: Keep scrolling!</p>
         </div>
       </aside>
 
 
+
+      {/* ── Ghost cursor overlay ── */}
+      <GhostCursor isIdle={isIdle} x={ghostPos.x} y={ghostPos.y} />
 
       {/* ── Scroll indicator dots ── */}
       <ScrollIndicator />
