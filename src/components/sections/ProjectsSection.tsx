@@ -83,7 +83,7 @@ export default function ProjectsSection() {
                       <CardDescription>{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <span className="text-xs text-muted-foreground">View project &rarr;</span>
+                      <span className="text-xs text-foreground/80">View project &rarr;</span>
                     </CardContent>
                   </Card>
                 </a>

@@ -23,7 +23,7 @@ export default function EducationSection() {
         <h2 className="text-xl font-semibold mb-3 text-foreground">Education &amp; Skills</h2>
 
         <h3 className="font-medium mb-2 text-foreground">Landscape Architecture</h3>
-        <ul className="list-disc list-inside text-muted-foreground space-y-1 text-sm mb-4">
+        <ul className="list-disc list-inside text-foreground space-y-1 text-sm mb-4">
           <li>Proficiency in plant material selection</li>
           <li>SketchUp: 3D modelling &amp; architectural visualisation</li>
           <li>Photoshop: photo editing, graphic design</li>
@@ -32,7 +32,7 @@ export default function EducationSection() {
         </ul>
 
         <h3 className="font-medium mb-2 text-foreground">Languages</h3>
-        <ul className="list-disc list-inside text-muted-foreground space-y-1 text-sm mb-4">
+        <ul className="list-disc list-inside text-foreground/80 space-y-1 text-sm mb-4">
           <li>English — fluent</li>
           <li>Czech — fluent</li>
           <li>Vietnamese — fluent</li>
@@ -40,7 +40,7 @@ export default function EducationSection() {
         </ul>
 
         <h3 className="font-medium mb-2 text-foreground">Tutoring Experience</h3>
-        <ul className="list-disc list-inside text-muted-foreground space-y-1 text-sm">
+        <ul className="list-disc list-inside text-foreground space-y-1 text-sm">
           <li>Simplifying complex concepts into understandable units</li>
           <li>Effective communication &amp; learner assessment</li>
         </ul>

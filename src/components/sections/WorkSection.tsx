@@ -28,14 +28,14 @@ export default function WorkSection() {
       <SpeechBubble className="max-w-lg">
         <h2 className="text-xl font-semibold mb-3 text-foreground">A little about me</h2>
 
-        <p className="text-muted-foreground leading-relaxed mb-4">
+        <p className="text-foreground/80 leading-relaxed mb-4">
           My name is Dong Thi Thu Thao, but everybody calls me Martina.
           I&rsquo;m a self-taught frontend developer who pivoted from landscape
           architecture because I wanted to combine creativity with analytical
           problem-solving in a field that moves fast and rewards curiosity.
         </p>
 
-        <ul className="list-disc list-inside text-muted-foreground space-y-1 mb-6 text-sm">
+        <ul className="list-disc list-inside text-foreground/80 space-y-1 mb-6 text-sm">
           <li>Analytical understanding of the problem, yet innovative solutions.</li>
           <li>From conceptualisation to implementation and troubleshooting.</li>
         </ul>
@@ -56,7 +56,7 @@ export default function WorkSection() {
             </HoverCardTrigger>
             <HoverCardContent>
               <p className="font-medium">Thaotic-good</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-foreground/80">
                 Check out my repos and contributions.
               </p>
             </HoverCardContent>
@@ -70,7 +70,7 @@ export default function WorkSection() {
             </HoverCardTrigger>
             <HoverCardContent>
               <p className="font-medium">@thaotic_good</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-foreground/80">
                 Follow me for behind-the-scenes updates.
               </p>
             </HoverCardContent>

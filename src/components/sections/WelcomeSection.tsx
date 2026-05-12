@@ -38,7 +38,7 @@ export default function WelcomeSection() {
           ))}
         </h1>
 
-        <p className="text-muted-foreground leading-relaxed">
+        <p className="text-foreground/80 leading-relaxed">
           I value the freedom that coding provides and believe in harnessing
           creativity and analytical thinking into real-world contributions.
         </p>
