@@ -61,7 +61,7 @@ export default function GazeTracker({
                   <motion.span
                     key={activeSection}
                     initial={{ opacity: 0, scale: 0.4, rotate: -20 }}
-                    animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                    animate={{ opacity: 1, scale: 2, rotate: 0 }}
                     exit={{ opacity: 0, scale: 0.4, rotate: 20 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     className={cn("absolute text-3xl pointer-events-none select-none", prop.position)}

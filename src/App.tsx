@@ -17,7 +17,7 @@ function AppLayout() {
         {/* ── Left column: scrollable content ── */}
         <main
             ref={scrollContainerRef}
-            className="flex-1 overflow-y-auto md:mr-[40%]"
+            className="flex-1 overflow-y-auto md:mr-[30%]"
         >
             <WelcomeSection />
             <WorkSection />

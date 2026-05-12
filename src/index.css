@@ -124,9 +124,13 @@
     inset: 0;
     z-index: -1;
     background:
-      radial-gradient(ellipse 80% 60% at 10% 20%, oklch(0.85 0.08 280 / 30%), transparent),
-      radial-gradient(ellipse 60% 50% at 80% 70%, oklch(0.88 0.06 160 / 25%), transparent),
-      radial-gradient(ellipse 70% 40% at 50% 50%, oklch(0.92 0.04 60 / 20%), transparent);
+      radial-gradient(ellipse 80% 60% at 10% 20%, oklch(0.965 0.033 81.99), transparent),
+      radial-gradient(ellipse 60% 50% at 80% 70%, oklch(0.934 0.16 104.086), transparent),
+      radial-gradient(ellipse 70% 40% at 50% 50%, oklch(0.71 0.192 43.902), transparent),
+      radial-gradient(ellipse 90% 80% at 20% 70%, oklch(0.673 0.215 25.04), transparent),
+      url('@/assets/cleaned.webp');
+    background-size: auto, auto, auto, auto, 600px 600px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
     pointer-events: none;
   }
   html {

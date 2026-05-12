@@ -40,9 +40,9 @@ export default function ScrollIndicator() {
             {/* Label tooltip */}
             <span
               className={cn(
-                "absolute left-full ml-3 whitespace-nowrap text-xs font-medium",
-                "opacity-0 group-hover:opacity-100 transition-opacity",
-                isActive ? "text-foreground" : "text-muted-foreground"
+                "absolute opacity-0 left-full ml-3 whitespace-nowrap text-sm font-medium",
+                "lg:group-hover:opacity-100 transition-opacity",
+                isActive ? "text-foreground lg:opacity-100" : "text-muted-foreground group-hover:scale-110"
               )}
             >
               {label}
@@ -55,7 +55,7 @@ export default function ScrollIndicator() {
                 "block rounded-full transition-colors",
                 isActive
                   ? "w-3 h-3 bg-foreground"
-                  : "w-2 h-2 bg-muted-foreground/40 group-hover:bg-muted-foreground"
+                  : "w-2 h-2 bg-muted-foreground/40 group-hover:bg-muted-foreground group-hover:scale-130"
               )}
             />
           </button>
