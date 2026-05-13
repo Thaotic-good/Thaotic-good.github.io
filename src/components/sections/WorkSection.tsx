@@ -7,6 +7,7 @@ import {
   HoverCardTrigger,
   HoverCardContent,
 } from "@/components/ui/hover-card";
+import cvPdf from "@/assets/Thu_Thao_Dongova_Resume_Fixed.docx.pdf";
 
 /**
  * Work / About-me section — career summary, CV download, and social links.
@@ -43,7 +44,7 @@ export default function WorkSection() {
         {/* Actions */}
         <div className="flex flex-wrap items-center gap-3">
           <Button size="sm" asChild>
-            <a href="/cv.pdf" download>
+            <a href={cvPdf} download="Thu_Thao_Dongova_Resume.pdf">
               Download CV
             </a>
           </Button>
