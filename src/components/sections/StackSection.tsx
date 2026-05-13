@@ -91,7 +91,7 @@ function TechGroupList({groups}: { groups: TechGroup[] }) {
 /**
  * Tech Stack section — core technologies and tools.
  */
-export default function EducationSection() {
+export default function StackSection() {
   const {registerSection} = useScrollContext();
 
   const ref = useCallback(

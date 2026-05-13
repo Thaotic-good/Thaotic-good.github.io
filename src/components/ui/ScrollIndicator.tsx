@@ -7,7 +7,7 @@ const sections: { id: SectionId; label: string }[] = [
   { id: "welcome", label: "Welcome" },
   { id: "work", label: "Work" },
   { id: "projects", label: "Projects" },
-  { id: "education", label: "Education" },
+  { id: "stack", label: "Stack" },
 ];
 
 export default function ScrollIndicator() {
@@ -24,7 +24,7 @@ export default function ScrollIndicator() {
     <nav
       className={cn(
         "fixed left-4 top-1/2 -translate-y-1/2 z-50 flex-col gap-4 items-center",
-        "hidden md:flex lg:scale-110 lg:origin-left"
+        "hidden md:flex lg:scale-110 lg:origin-left",
       )}
       aria-label="Section navigation"
     >
@@ -42,7 +42,9 @@ export default function ScrollIndicator() {
               className={cn(
                 "absolute opacity-0 left-full ml-3 whitespace-nowrap text-sm font-medium",
                 "lg:group-hover:opacity-100 transition-opacity",
-                isActive ? "text-foreground lg:opacity-100" : "text-muted-foreground group-hover:scale-110"
+                isActive
+                  ? "text-foreground lg:opacity-100"
+                  : "text-muted-foreground group-hover:scale-110",
               )}
             >
               {label}
@@ -55,7 +57,7 @@ export default function ScrollIndicator() {
                 "block rounded-full transition-colors",
                 isActive
                   ? "w-3 h-3 bg-foreground"
-                  : "w-2 h-2 bg-muted-foreground/40 group-hover:bg-muted-foreground group-hover:scale-130"
+                  : "w-2 h-2 bg-muted-foreground/40 group-hover:bg-muted-foreground group-hover:scale-130",
               )}
             />
           </button>

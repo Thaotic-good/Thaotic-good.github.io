@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useCallback, useRef } from "react";
 import { useScroll, useMotionValueEvent, MotionValue } from "framer-motion";
 
-export type SectionId = "welcome" | "work" | "projects" | "education";
+export type SectionId = "welcome" | "work" | "projects" | "stack";
 
 interface ScrollContextValue {
   activeSection: SectionId;
