@@ -52,7 +52,7 @@ export default function ProjectsSection() {
 
   const ref = useCallback(
     (el: HTMLElement | null) => registerSection("projects", el),
-    [registerSection]
+    [registerSection],
   );
 
   return (
@@ -62,12 +62,17 @@ export default function ProjectsSection() {
       className="flex min-h-screen items-center justify-center px-6 md:px-12"
     >
       <SpeechBubble className="max-w-lg w-full">
-        <h2 className="text-xl font-semibold mb-4 text-foreground">Side Projects</h2>
+        <h2 className="text-xl font-semibold mb-4 text-foreground">
+          Side Projects
+        </h2>
 
         <Carousel opts={{ align: "start", loop: true }} className="w-full">
           <CarouselContent>
             {projects.map((project) => (
-              <CarouselItem key={project.title} className="basis-full sm:basis-1/2">
+              <CarouselItem
+                key={project.title}
+                className="basis-full sm:basis-1/2"
+              >
                 <a
                   href={project.href}
                   target="_blank"
@@ -83,7 +88,9 @@ export default function ProjectsSection() {
                       <CardDescription>{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <span className="text-xs text-foreground/80">View project &rarr;</span>
+                      <span className="text-xs text-foreground/80">
+                        View project &rarr;
+                      </span>
                     </CardContent>
                   </Card>
                 </a>
