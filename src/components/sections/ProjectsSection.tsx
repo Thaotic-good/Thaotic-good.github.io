@@ -1,13 +1,7 @@
 import React, { useCallback } from "react";
 import { useScrollContext } from "@/context/ScrollContext";
 import SpeechBubble from "@/components/ui/SpeechBubble";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "@/components/ui/carousel";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
   Card,
   CardHeader,
@@ -42,6 +36,12 @@ const projects: Project[] = [
     href: "#",
     emoji: "\u{1F9EA}",
   },
+  {
+    title: "Sandbox Experiments",
+    description: "Playground for layout primitives and animation ideas.",
+    href: "#",
+    emoji: "\u{1F9EA}",
+  },
 ];
 
 /**
@@ -66,40 +66,30 @@ export default function ProjectsSection() {
           Side Projects
         </h2>
 
-        <Carousel opts={{ align: "start", loop: true }} className="w-full">
-          <CarouselContent>
+        <ScrollArea className="w-full">
+          <div className="flex gap-4 pb-4">
             {projects.map((project) => (
-              <CarouselItem
+              <Card
                 key={project.title}
-                className="basis-full sm:basis-1/2"
+                className="shrink-0 basis-full sm:basis-[calc(50%-0.5rem)] cursor-pointer hover:shadow-md"
               >
-                <a
-                  href={project.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="block h-full"
-                >
-                  <Card className="h-full hover:ring-2 hover:ring-foreground/20 transition-shadow">
-                    <CardHeader>
-                      <CardTitle>
-                        <span className="mr-2">{project.emoji}</span>
-                        {project.title}
-                      </CardTitle>
-                      <CardDescription>{project.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <span className="text-xs text-foreground/80">
-                        View project &rarr;
-                      </span>
-                    </CardContent>
-                  </Card>
-                </a>
-              </CarouselItem>
+                <CardHeader>
+                  <CardTitle>
+                    <span className="mr-2">{project.emoji}</span>
+                    {project.title}
+                  </CardTitle>
+                  <CardDescription>{project.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <span className="text-xs text-foreground/80">
+                    View project &rarr;
+                  </span>
+                </CardContent>
+              </Card>
             ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+          </div>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
       </SpeechBubble>
     </section>
   );
